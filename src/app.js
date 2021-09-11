@@ -7,6 +7,8 @@ const Geo = require("./Utility/geo");
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 // Define Paths forexpress config
 const publicDirectory = path.join(__dirname, "../public");
 // console.log(publicDirectory);
@@ -121,6 +123,6 @@ app.get("*", function (req, res) {
   res.render("404");
 });
 
-app.listen(3000, function () {
-  console.log("Server is up on Port 3000");
+app.listen(port, function () {
+  console.log(`Server is up on Port 3000 ${port}`);
 });
