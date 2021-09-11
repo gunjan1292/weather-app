@@ -104,6 +104,7 @@ app.get("/weather", function (req, res) {
 
         console.log(data);
         console.log(coordinates);
+        // console.log("git testing")
       });
     });
   }
