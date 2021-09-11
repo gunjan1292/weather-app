@@ -1,0 +1,37 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>index Page</title>
+  </head>
+
+  <body>
+    {{>header}}
+  
+    {{title}}
+
+  <!-- The form -->
+    <form class="example" action="action_page.php">
+      <input id="searchinput" type="text" placeholder="Search.." name="search">
+      <button id="searchbutton" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <p id="errorparagraph"></p>
+    <p id="successparagraph"></p>
+
+    <h1>Hi I am external Dynamic index Page from hbs</h1>
+    <h1>{{title}}</h1>
+    <h1>{{name}}</h1>
+    <p>Created by {{name}}</p>
+    <img src="./images/8__1_3_180x.png" />
+
+  </body>
+  {{>footer}}
+  <script src="./js/app.js"></script>
+
+</html>
